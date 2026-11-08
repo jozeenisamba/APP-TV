@@ -1,0 +1,21 @@
+workflows:
+  android-release:
+    name: World TV Android Release
+    instance_type: linux_x2
+    max_build_duration: 60
+    environment:
+      java: 17.0.17
+      vars:
+        PACKAGE_NAME: "com.apptv.worldtv"
+    cache:
+      cache_paths:
+        - $HOME/.gradle/caches
+        - $HOME/.gradle/wrapper
+    scripts:
+      - name: Build release APK and AAB
+        script: |
+          chmod +x ./gradlew
+          ./gradlew assembleRelease bundleRelease
+    artifacts:
+      - app/build/outputs/apk/release/*.apk
+      - app/build/outputs/bundle/release/*.aab

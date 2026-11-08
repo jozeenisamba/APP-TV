@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">World TV</string>
+    <string name="channel_count">%1$d channels</string>
+    <string name="single_channel">1 channel</string>
+</resources>

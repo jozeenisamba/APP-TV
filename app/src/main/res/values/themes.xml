@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="icon_background">#F2BDA9</color>
+    <style name="Theme.WorldTV" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#D84B32</item>
+        <item name="android:statusBarColor">#111111</item>
+        <item name="android:navigationBarColor">#111111</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
